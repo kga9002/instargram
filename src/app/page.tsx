@@ -1,5 +1,6 @@
-import Image from 'next/image';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faThumbsUp } from '@fortawesome/free-solid-svg-icons';
 
 export default function Home() {
-	return <div className="flex flex-col"></div>;
+	return <div className="bg-yellow-200"></div>;
 }
