@@ -2,6 +2,9 @@ import type { Metadata } from 'next';
 import localFont from 'next/font/local';
 import './global.css';
 import Link from 'next/link';
+import '@fortawesome/fontawesome-svg-core/styles.css';
+import { config } from '@fortawesome/fontawesome-svg-core';
+config.autoAddCss = false;
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSquarePlus } from '@fortawesome/free-regular-svg-icons';
 import {
@@ -42,17 +45,15 @@ export default function RootLayout({
 						{/* @TODO link add post */}
 						<button
 							type="button"
-							className="cursor-pointer group relative w-7 h-7">
+							className="cursor-pointer group relative w-8 aspect-square">
 							<FontAwesomeIcon
 								icon={faSquarePlus}
-								width={28}
-								height={28}
+								size="2xl"
 								className="group-hover:opacity-0 opacity-100 absolute top-0 left-0"
 							/>
 							<FontAwesomeIcon
 								icon={SolidPlus}
-								width={28}
-								height={28}
+								size="2xl"
 								className="group-hover:opacity-100 opacity-0 absolute top-0 left-0"
 							/>
 						</button>
@@ -65,15 +66,15 @@ export default function RootLayout({
 							className="cursor-pointer rounded-sm bg-gradient-to-r from-[#f9ce34] via-[#ee2a7b] to-[#6228d7] h-7 w-fit px-1">
 							<div className="text-sm px-1 md:px-3">
 								<span className="hidden md:block text-white">Sign Out</span>
-								<FontAwesomeIcon
-									className="block md:hidden"
-									style={{
-										color: '#FFFFFF',
-									}}
-									icon={faArrowRightFromBracket}
-									width={24}
-									height={24}
-								/>
+								<div className="block md:hidden">
+									<FontAwesomeIcon
+										style={{
+											color: '#FFFFFF',
+										}}
+										icon={faArrowRightFromBracket}
+										size="lg"
+									/>
+								</div>
 							</div>
 						</button>
 					</div>
