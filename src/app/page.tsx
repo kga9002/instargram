@@ -2,8 +2,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faThumbsUp } from '@fortawesome/free-solid-svg-icons';
 import Image from 'next/image';
 import tempImg from '../../public/images/women.jpg';
-import ProfileCircle from './components/ProfileCircle';
-import SinglePost from './components/SinglePost';
+import ProfileCircle from '../components/ProfileCircle';
+import SinglePost from '../components/SinglePost';
 
 const tempArr = [
 	{

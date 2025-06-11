@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import React from 'react';
-import tempImg from '../../../public/images/women.jpg';
+import tempImg from '../../public/images/women.jpg';
 
 function ProfileCircle() {
 	return (

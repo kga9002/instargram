@@ -3,7 +3,7 @@
 import React, { useEffect, useState } from 'react';
 import ProfileCircle from './ProfileCircle';
 import Image from 'next/image';
-import tempImg from '../../../public/images/view.jpeg';
+import tempImg from '../../public/images/view.jpeg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBookmark, faHeart } from '@fortawesome/free-solid-svg-icons';
 import { faHeart as EmptyHeart } from '@fortawesome/free-regular-svg-icons';

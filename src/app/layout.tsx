@@ -11,7 +11,7 @@ import {
 	faArrowRightFromBracket,
 	faSquarePlus as SolidPlus,
 } from '@fortawesome/free-solid-svg-icons';
-import ProfileCircle from './components/ProfileCircle';
+import ProfileCircle from '../components/ProfileCircle';
 
 const pretendard = localFont({
 	src: '../../public/fonts/PretendardVariable.woff2',
